@@ -1,0 +1,23 @@
+
+ <!--Navbar-->
+ <ion-view view-title="Dashboard">
+ <ion-nav-buttons side="primary">
+    </ion-nav-buttons>
+  <ion-content class="padding">
+    <h2>{{'TITLE_WELCOME' |translate}}</h2>
+    <div class="list">
+  <label class="item item-input">
+    <input ng-model="vm.item.name" type="text">
+  </label>
+  <button ng-click="vm.add()" class="button button-block button-positive">
+  Submit
+</button>
+ <ion-list>
+  <ion-item ng-repeat="item in vm.items">
+    {{item.name}}
+  </ion-item>
+</ion-list>
+
+</div>
+  </ion-content>
+</ion-view>

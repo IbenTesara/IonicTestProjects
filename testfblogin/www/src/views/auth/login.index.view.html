@@ -1,0 +1,12 @@
+<ion-view view-title="Log-in">
+    <ion-content class="padding center">
+        <div class="list card" ng-hide="log_pattern">
+            <div class="item item-icon-left"> <i class="icon ion-alert assertive"></i>
+                <h2 class="assertive">Please set your login pattern!</h2> </div>
+        </div>
+        <div style="margin-left:1.5em" id="lockPattern" class="pattern-holder patt-holder"></div>
+        <label class="item">
+            <button class="button button-block button-positive" ng-click="vm.fbLogin()"> Login with Facebook </button>
+        </label>
+    </ion-content>
+</ion-view>

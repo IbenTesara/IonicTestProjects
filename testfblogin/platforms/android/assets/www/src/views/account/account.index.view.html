@@ -1,0 +1,21 @@
+<ion-view view-title="Account">
+    <ion-content>
+        <div class="list card">
+            <div style="text-align:center" class="item"> <img src="http://graph.facebook.com/{{vm.user.id}}/picture?width=140&height=140" /> </div>
+            <div class="item item-body">
+                <h2>{{vm.user.name}}</h2>
+                <p>{{vm.user.city}}</p>
+            </div>
+        </div>
+        <ion-list>
+            <ion-toggle ng-model="vm.settings.enableFriends"> {{'OPTION_FRIENDS' | translate}} </ion-toggle>
+            <div class="item item-divider"> {{'TITLE_LANGUAGE' | translate}} </div>
+            <ion-radio ng-model="vm.lang" ng-change="vm.changeLang()" ng-value="'en'">EN</ion-radio>
+            <ion-radio ng-model="vm.lang" ng-change="vm.changeLang()" ng-value="'nl'">NL</ion-radio>
+            <div class="item item-divider"> {{'TITLE_LOGOUT' | translate}} </div>
+            <div class="item item-button-right"> {{'TITLE_LOGOUT' | translate}}
+                <button class="button button-assertive" ng-click="vm.logout()"> <i class="icon ion-arrow-return-right"></i> </button>
+            </div>
+        </ion-list>
+    </ion-content>
+</ion-view>

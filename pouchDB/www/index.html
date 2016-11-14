@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+    <!-- compiled css output -->
+    <link href="css/ionic.app.css" rel="stylesheet">
+    <!-- ionic/angularjs js -->
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="cordova.js"></script>
+    <script src="lib/pouchDB/pouchdb.js"></script>
+    <!-- Bower components-->
+    <script src="lib/angular-animate/angular-animate.min.js"></script>
+    <script src="lib/angular-sanitize/angular-sanitize.min.js"></script>
+    <script src="lib/angular-translate/angular-translate.min.js"></script>
+    <!-- your app's js -->
+    <script src="src/app.js"></script>
+    <script src="src/constants.js"></script>
+    <!--Controllers  -->
+    <script src="src/main/main.controller.js"></script>
+    <script src="src/views/homepage/homepage.controller.js"></script>
+    <script src="src/views/chat/chat.controller.js"></script>
+    <script src="src/views/chat/detail/chat.detail.controller.js"></script>
+    <script src="src/views/account/account.controller.js"></script>
+    <script src="src/views/actionsheet/actionsheet.controller.js"></script>
+    <!--Routes-->
+    <script src="src/views/homepage/homepage.config.js"></script>
+    <script src="src/views/chat/chat.config.js"></script>
+    <script src="src/views/account/account.config.js"></script>
+    <script src="src/views/actionsheet/actionsheet.config.js"></script>
+    <!-- Services-->
+    <script src="src/models/factories/pouchdb.factory.js"></script>
+    <!--Models-->
+    <script src="src/models/resources/chat.resource.factory.js"></script>
+</head>
+
+<body ng-app="starter">
+    <!--
+      The nav bar that will be updated as we navigate between views.
+    -->
+    <ion-nav-bar class="bar-stable">
+    </ion-nav-bar>
+    <!--
+      The views will be rendered in the <ion-nav-view> directive below
+      Templates are in the /templates folder (but you could also
+      have templates inline in this html file if you'd like).
+    -->
+    <ion-nav-view></ion-nav-view>
+</body>
+
+</html>

@@ -1,0 +1,14 @@
+<ion-view view-title="Account">
+  <ion-content>
+    <ion-list>
+    <ion-toggle  ng-model="vm.settings.enableFriends">
+    {{'OPTION_FRIENDS' | translate}}
+    </ion-toggle>
+    <div class="item item-divider">
+    {{'TITLE_LANGUAGE' | translate}}
+  </div>
+    <ion-radio ng-model="vm.lang" ng-change="vm.changeLang()" ng-value="'en'">EN</ion-radio>
+<ion-radio ng-model="vm.lang" ng-change="vm.changeLang()" ng-value="'nl'">NL</ion-radio>
+    </ion-list>
+  </ion-content>
+</ion-view>

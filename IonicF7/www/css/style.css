@@ -1,0 +1,13 @@
+/* Empty. Add your own CSS if you like */
+.pane{
+    background-color: #f0eff5 !important;
+}
+
+.button-item{
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.ios-divider{
+    height:10px;
+}
